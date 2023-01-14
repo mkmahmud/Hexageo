@@ -9,7 +9,7 @@ export const theme = createTheme({
             main: '#FFFFFF', // red
         },
         secondary: {
-            main: '#3F0071', // blue
+            main: '#A59263', // blue
         },
         success: {
             main: '#008000'
@@ -21,27 +21,83 @@ export const theme = createTheme({
 
     components: {
         MuiContainer: {
-            styleOverrides:{
-                root:{
-                    position:'relative',
-                    padding:'0px'
+            styleOverrides: {
+                root: {
+                    position: 'relative',
+                    padding: '0px'
                 }
             },
             defaultProps: {
-               maxWidth: 'xl',
+                maxWidth: 'xl',
             },
-         },
+        },
 
         MuiButton: {
             styleOverrides: {
                 root: {
-                    fontWeight:'bold',
+                    fontWeight: 'bold',
                     color: '#ffffff',
-                    fontSize:'16px',
-                    textTransform:'lowercase'
+                    fontSize: '16px',
+                    textTransform: 'lowercase'
                 },
             }
+        },
+
+        MuiInputLabel: {
+            styleOverrides: {
+                root: {
+                    color: '#FFFFFF'
+                }
+            }
+        },
+
+        MuiSelect: {
+            styleOverrides: {
+                root: {
+                    
+                    color: '#FFFFFF',
+                    'svg':{
+                        color:'#A59263'
+                    },
+                    'fieldset':{
+                        borderColor:'#A59263',
+                        '&:focus':{
+                            borderColor:'#A59263'
+                        }
+                    }
+                    
+                }
+            },
+
+        },
+
+        MuiTextField:{
+            styleOverrides: {
+                root: {
+                    
+                    color: '#FFFFFF',
+                    'textarea':{
+                        color:'white'
+                    },
+                    
+                    '&:hover:not(.Mui-disabled):before': {
+                        borderColor: 'red',
+                    },
+                    'svg':{
+                        color:'#A59263'
+                    },
+                    'fieldset':{
+                        borderColor:'#A59263',
+                        '&:focus':{
+                            borderColor:'#A59263'
+                        }
+                    }
+                    
+                }
+            },
         }
+
+        
     }
 
 });
