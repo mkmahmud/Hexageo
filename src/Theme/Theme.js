@@ -20,6 +20,17 @@ export const theme = createTheme({
     },
 
     components: {
+        MuiContainer: {
+            styleOverrides:{
+                root:{
+                    position:'relative',
+                    padding:'0px'
+                }
+            },
+            defaultProps: {
+               maxWidth: 'xl',
+            },
+         },
 
         MuiButton: {
             styleOverrides: {
