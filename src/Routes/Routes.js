@@ -3,15 +3,16 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
+import Main from '../Layouts/Main';
 
 
 
-const Routes = () => {
+const Routes = () => { 
 
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <div>Hello Routes</div>,
+            element: <Main></Main>
         },
     ]);
 
